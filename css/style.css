@@ -1,0 +1,112 @@
+.navBar-Desktop{
+	text-decoration: none;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+}
+
+.navBar-Desktop:hover{
+	color: gold;
+}
+
+.menu-custom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    /* border: 1px solid black;  */
+}
+.menu-custom-burger {
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    box-shadow: 0 .5px 2px black;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+}
+.menu-custom-burger::before,
+.menu-custom-burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    box-shadow: 0 .5px 2px black;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+}
+.menu-custom-burger::before {
+    transform: translateY(-10px);
+    left: 15%;   
+}
+.menu-custom-burger::after {
+    transform: translateY(10px);
+    left: 15%;   
+}
+
+.menu-custom.open .menu-custom-burger  {
+    transform: translateX(20px);
+    background: transparent;
+    box-shadow: none;
+    
+}
+.menu-custom.open .menu-custom-burger::before {
+    transform: rotate(45deg) translate(-20px, 20px);
+}
+.menu-custom.open .menu-custom-burger::after {
+    transform: rotate(-45deg) translate(-20px, -20px);
+}
+.dropDownContent {
+    top: 10%;
+    padding-top: 2%;
+    padding-bottom: 50%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-x: auto;
+    overflow-y: auto;
+    text-align:justify;
+    display: none;
+    z-index: -1;
+    transition: all .3s ease;
+
+}
+.dropDownContent.active{
+    top: 10%;
+    display: block;
+    z-index: 1;
+    transition: all .3s ease;
+}
+
+.banner1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/img1.png) !important; 
+    background-size:contain; 
+    background-repeat: no-repeat;
+    min-height: 550px;
+}
+
+h1{
+	font-size: calc( 1.5rem + 1.5rem) !important;
+	color: gold;
+	font-family: 'Hedvig Letters Serif', serif;
+
+}
+
+hr.line{
+    border: white solid!important;
+    border-radius: 5px;
+}
+.text-white{
+	color: #fffffe !important;
+}
+
+p,h2{
+	font-family: 'Hedvig Letters Serif', serif;
+}
+small{
+	font-family: 'Hedvig Letters Serif', serif;
+}
