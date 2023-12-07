@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/menu.css"> -->
+    <link rel="stylesheet" href="css/sidenav.css">
+
+    <!-- Parallax Plugin -->
+    <script src="parallax.js-1.5.0/parallax.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <title>Home</title>
+
+
+</head>
+<body>
+
+
+<div class="sidebar d-xxl-none d-xl-none d-lg-none d-block" id="side_nav">
+
+    <div class="header-box px-2 pt-3 pb-4 d-flex justify-content-end">
+
+        <!-- Close Btn -->
+        <button class="btn d-xxl-none d-xl-none d-lg-none d-block close-btn p-5 py-0 text-dark">
+            <i class="bi bi-x-lg" style="font-weight: 900 !important;"></i>
+        </button>
+
+    </div>
+
+    <ul class="list-unstyled ps-5 pt-5">
+
+        <li class="px-4 py-3 d-block">
+            <a href="index.html" class="text-decoration-none">
+                Home
+            </a>
+        </li>
+
+        <li class=" px-4 py-3 d-block">
+            <a href="menu.html" class="text-decoration-none">
+                Menu
+            </a>
+        </li>
+
+        <li class=" px-4 py-3 d-block">
+            <a href="about.html" class="text-decoration-none">
+                About
+            </a>
+        </li>
+
+        <li class=" px-4 py-3 d-block">
+            <a href="contact.html" class="text-decoration-none">
+                Contact
+            </a>
+        </li>
+
+        <li class=" px-4 py-3 d-block">
+            <a href="terms.html" class="text-decoration-none">
+                Terms & Conditions
+            </a>
+        </li>
+
+        <li class=" px-4 py-3 d-block">
+            <a href="privacy.html" class="text-decoration-none">
+                Privacy Policy
+            </a>
+        </li>
+
+    </ul>
+
+</div>
+<!-- Navbar/Header -->
+<div class="row bg-hero d-xxl-block d-xl-block d-lg-block d-none bg-black">
+    <div class="col-12 py-3">
+        <div class="row justify-content-center">
+
+            <div class="col-2">
+                <img src="img/logo.png" class="img-fluid pb-3" width="150" height="90" alt="">
+            </div>
+
+            <div class="col-12 navig-links">
+                <ul class="d-flex flex-row justify-content-center m-0 list-unstyled">
+
+                    <li>
+                        <a href="index.html" class="px-3 text-decoration-none">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="menu.html" class="px-3 text-decoration-none">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="px-3 text-decoration-none">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="px-3 text-decoration-none">
+                            Contact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html" class="px-3 text-decoration-none">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="privacy.html" class="px-3 text-decoration-none">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<!-- For SideNav -->
+<nav class="navbar navbar-expand-lg d-xxl-none d-xl-none d-lg-none d-block">
+
+    <div class="px-1 py-1">
+
+        <div class="d-flex img_size_md_div">
+
+            <button class="btn pe-md-5 col-1 pe-sm-4 pe-4 py-0 open-btn d-flex justify-content-start align-self-center">
+                <i class="bi bi-list" style="font-size: 1.5rem; color: rgb(0,0,0);"></i>
+            </button>
+
+            <div class="d-flex col-11 justify-content-center pe-4">
+                <a href="site.php" class="text-decoration-none">
+                    <img src="img/logo-blck.png" class="img-fluid pb-3" width="120" height="60" alt="">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<div class="contianer-fluid p-xxl-5 p-xl-5 p-lg-5 p-1 mx-5">
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-1">
+
+        </div>
+
+        <div class="col-xl-8 col-lg-8 col-12 py-5">
+            <h1 class="txt" style="white-space:pre-wrap;" >Contact Our CEO</h1>
+            <p class="txt m-0">Do you have a question or concern about your order or the food? Or would like to give feedback on your experience? Jason, our CEO, wants to hear from you! He is the sole customer service agent for the entire company, and can take care of all issues expeditiously and personally. All messages from this form go directly to his work email, and he is usually able to respond very quickly!</p><br><br>
+            <p class="txt m-0">But first, please take a second to read through the following suggestions, as they may instantly answer your concerns!</p><br><br>
+            <ul>
+                <li><p class="txt m-0">For up-to-date store hours, please refer to our Locations page, as it is always immediately updated, especially whenever we have holiday hours or special last-minute store closures.</p></li>
+                <li><p class="txt m-0">For lost items, while we cannot take responsibility for lost items, you should try to immediately visit the store where you may have lost your item in person, as item must be claimed in person if it is there.</p></li>
+                <li><p class="txt m-0">For media inquiries: please do not send a last-minute request and expect an immediate response. Only professional courtesy will be reciprocated with a response.</p></li>
+                <li><p class="txt m-0">Consultation or participation in studies by Jason involves an hourly consultation fee of a minimum of $1000/hr, and only serious inquiries are considered.</p></li>
+            </ul>
+            <p class="txt m-0"><i><b>Please consider the following policies before sending a message:</b></i></p><br><br>
+            <ul>
+                <li><p class="txt m-0">We do not take orders by phone at this time.</p></li>
+                <li><p class="txt m-0">We offer order ahead for pickup at some stores at limited hours.</p></li>
+                <li><p class="txt m-0">No reservations are accepted at any stores.</p></li>
+                <li><p class="txt m-0">We do not franchise, and do not plan to do so in the near future.</p></li>
+                <li><p class="txt m-0">We are not interested in any form of paid advertising campaigns.</p></li>
+                <li><p class="txt m-0">We are not able to just freely share our recipes for any of our products, as it is our livelihood. However, you can check out our cookbook for many of our recipes!</p></li>
+                <li><p class="txt m-0">Please, no solicitations in general. They will go straight into the trash.</p></li>
+                <li><p class="txt m-0">Last, but not least, please be respectful. We are all human here, no one is above anyone.</p></li>
+            </ul>
+            <p class="txt m-0">Thank you!</p><br><br>
+
+            <form class="">
+                <div class="row">
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
+                    <label for=""><p class="txt m-0">Name *</p></label>
+
+                    <input type="text" class="form-control shadow mt-3"><p class="txt m-0">First Name</p>
+                    </div>
+                    
+                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-12">
+                    <label for=""><p class="txt m-0"></p></label>
+                    <input type="text" class="form-control shadow mt-3"><p class="txt m-0">Last Name</p><br>
+                    </div>
+                </div>
+                <br>
+                <div class="d-flex">
+                    <div class="col-3">
+                    <label for=""><p class="txt m-0">Phone *</p></label>
+                    <input type="text" class="form-control shadow">
+                    <p class="txt m-0">(##)</p>
+                    </div>
+                    &nbsp;
+                    <div class="col-3">
+                    <label for=""></label>
+                    <input type="text" class="form-control shadow">
+                    <p class="txt m-0">###</p>
+                    </div>
+                    &nbsp;
+                    <div class="col-3">
+                    <label for=""></label>
+                    <input type="text" class="form-control shadow">
+                    <p class="txt m-0">####</p>
+                    </div>
+                </div>
+                <br>
+                <div class="">
+                    <label for="">Email Address *</label><br>
+                    <p class="txt m-0">This is our preferred way of contact.</p>
+                    <input type="text" class="form-control shadow"><br>
+
+                    <label for="">Location Visited *</label><br>
+                    <select name=""  class="form-select shadow col-5">
+                    <option value="Brooklyn: Downtown Brooklyn (54 Willoughby St.)">Brooklyn: Downtown Brooklyn (54 Willoughby St.)</option>
+                  
+                  <option value="Brooklyn: Greenpoint (648 Manhattan Ave.)">Brooklyn: Greenpoint (648 Manhattan Ave.)</option>
+                
+                  <option value="Brooklyn: Williamsburg (209 N. 8th St.)">Brooklyn: Williamsburg (209 N. 8th St.)</option>
+                
+                  <option value="Manhattan: Chelsea (96 8th Ave.)">Manhattan: Chelsea (96 8th Ave.)</option>
+                
+                  <option value="Manhattan: Chinatown (45 Bayard St.)">Manhattan: Chinatown (45 Bayard St.)</option>
+                
+                  <option value="Manhattan: Financial District (8 Liberty Place)">Manhattan: Financial District (8 Liberty Place)</option>
+                
+                  <option value="Manhattan: Upper East Side (328 E. 78th St.)">Manhattan: Upper East Side (328 E. 78th St.)</option>
+                
+                  <option value="Queens: Flushing (41-10 Main St.)">Queens: Flushing (41-10 Main St.)</option>
+                
+                  <option value="Queens: Flushing Tangram Mall">Queens: Flushing Tangram Mall</option>
+                
+                  <option value="Queens: Long Island City (12-15 Jackson Ave.)">Queens: Long Island City (12-15 Jackson Ave.)</option>
+                
+                  <option value="Queens: Long Island City (26-19 Jackson Ave.)">Queens: Long Island City (26-19 Jackson Ave.)</option>
+                
+                  <option value="Queens: Woodside (55-01 37th Ave.)">Queens: Woodside (55-01 37th Ave.)</option>
+                
+                  <option value="Not Applicable">Not Applicable</option>
+                    </select>
+                </div>
+                <br>
+                <div class="d-flex">
+                    <div class="col-xxl-2 col-xl-2 col-lg-2 col-6">
+                    <label for=""><p class="txt m-0">Date of Visit</p></label>
+                    <input type="text" class="form-control shadow">
+                    <p class="txt m-0">MM</p>
+                    </div>
+                    &nbsp;
+                    <div class="col-2">
+                    <label for=""></label>
+                    <input type="text" class="form-control shadow">
+                    <p class="txt m-0">DD</p>
+                    </div>
+                    &nbsp;
+                    <div class="col-2">
+                    <label for=""></label>
+                    <input type="text" class="form-control shadow">
+                    <p class="txt m-0">YY</p>
+                    </div>
+                </div>
+                <br>
+                <p class="txt m-0">Time of Visit</p><br>
+                <p class="txt m-0">Approximation is OK as well.</p>
+                <div class="d-flex">
+
+                    <div class="col-xxl-1 col-xl-1 col-lg-1 col-3">
+                        <input type="text" class="form-control shadow">
+                        <p class="txt m-0">MM</p>
+                    </div>
+
+                    &nbsp;
+
+                    <div class="col-xxl-1 col-xl-1 col-lg-1 col-3">
+                        <input type="text" class="form-control shadow">
+                        <p class="txt m-0">DD</p>
+                    </div>
+
+                    &nbsp;
+
+                    <div class="col-xxl-1 col-xl-1 col-lg-1 col-3">
+                        <input type="text" class="form-control shadow">
+                        <p class="txt m-0">YY</p>
+                    </div>
+
+                    &nbsp;
+
+                    <div class="col-2">
+                        <select class="form-select shadow">
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br>
+
+                <div>
+                    <p class="txt m-0">Order Number</p><br>
+                    <p class="txt m-0">Please enter your order number if you have your receipt.</p><br>
+                    <input type="text" class="form-control shadow">
+                </div>
+
+                <br>
+
+                <div>
+                    <p class="txt m-0">Last 4-Digits of Card Used for Payment</p><br>
+                    <p class="txt m-0">This helps us find your order, if applicable.</p><br>
+                    <input type="text" class="form-control shadow">
+                </div>
+
+                <br>
+
+                <div>
+                    <p class="txt m-0">What did you order?</p><br>
+                    <p class="txt m-0">Please list dish names or numbers, quantities, as much as you can remember.</p><br>
+                    <input type="text" class="form-control shadow">
+                </div>
+
+                <br>
+
+                <div>
+                    <p class="txt m-0">Message *</p><br>
+                    <textarea name="" class="form-control shadow" rows="3"></textarea>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <p class="txt m-0">Acknowledgement *</p><br><br>
+                    <input type="checkbox" class="form-check-input p-xxl-3 p-xl-3 p-lg-3 p-2 shadow col-2">
+                    <p class="txt m-0 col-10">I hereby certify my message is respectful and factual. I also acknowledge that I have read the policies listed above this form and my message complies with those as well. I understand that no one solicited my advice on anything, and I humbly acknowledge I don't run Xi'an Famous Foods, Jason does, and knows what's best for it.</p><br><br>
+                    <button class="btn btn-dark btn-lg btn-rounded mt-5">Send to CEO</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="col-xl-2 col-lg-2 col-1">
+
+        </div>  
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="row icon-div">
+
+<div class="col-12 semi-grey p-4">
+    <div class="row justify-content-center">
+
+        <div class="col-xxl-1 col-xl-1 col-lg-1 col-2 text-white text-center">
+            <a href="#">
+               <p class="txt-footer text-white">
+                  <i class="bi bi-twitter"></i>
+               </p>
+            </a>
+        </div>
+
+        <div class="col-xxl-1 col-xl-1 col-lg-1 col-2 text-white text-center">
+            <a href="#">
+               <p class="txt-footer text-white">
+                  <i class="bi bi-instagram"></i>
+               </p>
+            </a>
+        </div>
+
+        <div class="col-xxl-1 col-xl-1 col-lg-1 col-2 text-white text-center">
+            <a href="#">
+               <p class="txt-footer text-white">
+                  <i class="bi bi-facebook"></i>
+               </p>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+<div class="col-12 dark-grey p-2">
+    <div class="row justify-content-center">
+
+        <!-- <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-4 text-white text-center">
+            <a href="#" class="text-decoration-none">
+               <p class="txt-footer text-white">
+                  About Us
+               </p>
+            </a>
+        </div>
+        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-4 text-white text-center">
+            <a href="#" class="text-decoration-none">
+               <p class="txt-footer text-white">
+                  Contact Us
+               </p>
+            </a>
+        </div> -->
+
+        <div class="col-12 text-secodary text-center pt-xxl-3 pt-xl-3 pt-lg-3 pt-3">
+             <p class="txt-footer-sub text-white">
+                Copyright © 2023 Xi'an Famous Foods. All rights reserved.
+             </p>
+        </div>
+
+    </div>
+</div>
+
+</div>
+<!-- SideNav -->
+<script>
+    $('.open-btn').on('click', function(){
+        $('.sidebar').addClass('active');
+    });
+
+
+    $('.close-btn').on('click', function(){
+        $('.sidebar').removeClass('active');
+    });
+
+    $('#close_modal_carou').on('click', function(){
+        $('#modal_carou').modal('hide');
+    })
+</script>
+
+<script>
+  AOS.init();
+</script>
+
+</div>
+
+</body>
+</html>

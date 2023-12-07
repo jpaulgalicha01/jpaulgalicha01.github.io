@@ -1,0 +1,401 @@
+/* index Page */
+/* NavigationButton (Desktop) */
+a.logo:hover {
+    color: none;
+    padding-bottom: 0;
+}
+.navBar-Desktop {
+    text-decoration: none;
+    color: black;
+}
+
+a.navBar-Desktop:hover{
+    color: black;
+    box-shadow: inset 0 -2px 0 0 rgb(56, 56, 56);
+    padding-bottom: 5px;
+
+}
+
+.dropDownMenuHover {
+    
+    position: absolute;
+    background-color: #f1f1f1;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    display: none;
+    top: 34%;
+}
+
+
+.showdropDownMenuHover:hover .dropDownMenuHover {
+    display: block;
+}
+
+.gg {
+    text-decoration: none;
+    color: black;
+}
+a.gg:hover{
+    color: black;
+    box-shadow: inset 0 0 0 0 rgb(56, 56, 56);
+    padding-bottom: 0px;
+}
+
+
+/* Mobile Navigation bar */
+
+.menu-custom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+    /* border: 1px solid black;  */
+}
+.menu-custom-burger {
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    box-shadow: 0 .5px 2px black;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+}
+.menu-custom-burger::before,
+.menu-custom-burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: gray;
+    box-shadow: 0 .5px 2px black;
+    border-radius: 2px;
+    transition: all .3s ease-in-out;
+}
+.menu-custom-burger::before {
+    transform: translateY(-10px);
+    left: 15%;   
+}
+.menu-custom-burger::after {
+    transform: translateY(10px);
+    left: 15%;   
+}
+
+/* ANIMATION */
+
+.menu-custom.open .menu-custom-burger  {
+    transform: translateX(20px);
+    background: transparent;
+    box-shadow: none;
+    
+}
+.menu-custom.open .menu-custom-burger::before {
+    transform: rotate(45deg) translate(-20px, 20px);
+}
+.menu-custom.open .menu-custom-burger::after {
+    transform: rotate(-45deg) translate(-20px, -20px);
+}
+
+
+.dropDownContent {
+    top: 10%;
+    padding-top: 2%;
+    padding-bottom: 50%;
+    background-color: white;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow-x: auto;
+    overflow-y: auto;
+    text-align:justify;
+    opacity: 0;
+    z-index: -9999;
+    transition: all .3s ease;
+}
+
+.menu.active {
+    position: fixed;
+    background-color: white;
+    display: block;
+    height: 100%;
+    top:0%;
+    padding-top: 6.5%;
+    z-index: 999;
+}
+.dropDownContent.active{
+    top: 20%;
+    opacity: 1;
+    z-index: 99999;
+    transition: all .3s ease;
+}
+
+/* Link-1 */
+
+.link-1 {
+    transition: all .5s ease;
+    translate: 0% 0%;
+    position: relative;
+    z-index: 0;
+}
+
+.link-2 {
+    translate: -200% 0%;
+    opacity: 0;
+    position: absolute;
+    z-index: -999999;
+   
+}
+
+/* End Link-1 */
+
+/* link-2 */
+.link-1.change {
+    transition: all .5s ease;
+    translate: 200% 0%;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+}
+.link-2.open {
+    transition: all .5s ease;
+    translate: 0% 0%;
+    opacity: 1;
+    position: relative;
+    z-index: 0;
+
+}
+
+/* End Link-2 */
+
+/* Currated Box */
+.link-CuratedBox {
+    translate: -200% 0%;
+    opacity: 0;
+    position: absolute;
+}
+
+.link-CuratedBox.open {
+    transition: all .5s ease;
+    translate: 0% 0%;
+    opacity: 1;
+    position: relative;
+    z-index: 0;
+
+}
+.link-2.change {
+    transition: all .5s ease;
+    translate: 200% 0%;
+    opacity: 0;
+    position: absolute;
+    z-index: -999999;
+}
+
+/* End Curated Box */
+
+/* Type Of Meat */
+.link-TypeOfMeat {
+    translate: -200% 0%;
+    opacity: 0;
+    position: absolute;
+}
+
+.link-TypeOfMeat.open {
+    transition: all .5s ease;
+    translate: 0% 0%;
+    opacity: 1;
+    position: relative;
+    z-index: 0;
+
+}
+.link-2.change {
+    transition: all .5s ease;
+    translate: 200% 0%;
+    opacity: 0;
+    position: absolute;
+    z-index: -999999;
+}
+/* End Type Of Meat */
+
+/* Grades& Collection */
+.link-Grades-Colection {
+    translate: -200% 0%;
+    opacity: 0;
+    position: absolute;
+}
+
+.link-Grades-Colection.open {
+    transition: all .5s ease;
+    translate: 0% 0%;
+    opacity: 1;
+    position: relative;
+    z-index: 0;
+
+}
+.link-2.change {
+    transition: all .5s ease;
+    translate: 200% 0%;
+    opacity: 0;
+    position: absolute;
+    z-index: -999999;
+}
+
+/* End Grades & Collection */
+
+/* Popular Cuts */
+.link-PopularCuts {
+    translate: -200% 0%;
+    opacity: 0;
+    position: absolute;
+}
+
+.link-PopularCuts.open {
+    transition: all .5s ease;
+    translate: 0% 0%;
+    opacity: 1;
+    position: relative;
+    z-index: 0;
+
+}
+.link-2.change {
+    transition: all .5s ease;
+    translate: 200% 0%;
+    opacity: 0;
+    position: absolute;
+    z-index: -999999;
+}
+/* End Popular Cuts */
+
+
+/* END Mobile Navigation */
+
+
+
+.video-bg {
+    width: 100%;
+    height: 580;
+    z-index: -1;
+    left: 0;
+    position: absolute;
+}
+.top-div {
+    padding-top: 20%;
+}
+.first-text {
+    font-family: 'Old Standard TT', serif;
+    color: white;
+    font-size: 80px;    
+}
+.second-text {
+    font-family: 'Avenir Next', serif; 
+    color: white;
+    font-size: 25.1px;
+}
+
+.zoom {
+
+    transition: transform .2s; /* Animation */
+  }
+  .zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+/* Footer animation */
+.zoom-footer {
+
+    transition: transform .2s; /* Animation */
+  }
+  .zoom-footer:hover {
+    transform: translateY(10px); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* End Index Page */
+
+
+/* Shop Page */
+
+.zoom2 {
+    transition: transform .2s; /* Animation */
+}
+.zoom2:hover {
+    transform: translateY(5px); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+/* End Shop Page */
+
+/* Faq Page */
+
+/* End FAQ Page */
+
+
+
+
+@media (max-width: 575px) {
+    
+
+
+    .first-text {
+        font-size: 30px;
+    }
+    .second-text {
+        font-size: 15px;
+     }
+    
+     .top-div { 
+        padding-top: 10%;
+    }
+    
+}
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) { 
+
+    
+.first-text {
+    font-size: 30px;
+}
+.second-text {
+    font-size: 15px;
+ }
+
+ .top-div { 
+    padding-top: 20%;
+}
+
+
+
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px)
+{
+
+    .first-text {
+        font-size: 30px;
+    }
+    .second-text {
+        font-size: 15px;
+     }
+}
+
